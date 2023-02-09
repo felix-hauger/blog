@@ -5,7 +5,7 @@ class DbConnection extends PDO
 
     public function __construct()
     {
-        $db = parse_ini_file('../config/database.ini');
+        $db = parse_ini_file(dirname(__DIR__)  .'/config/database.ini');
         $type = $db['type'];
         $name = $db['name'];
         $host = $db['host'];
