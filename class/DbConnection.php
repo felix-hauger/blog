@@ -20,6 +20,3 @@ class DbConnection extends PDO
         }
     }
 }
-
-$test = new DbConnection();
-var_dump($test);
